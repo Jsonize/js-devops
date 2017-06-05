@@ -16,7 +16,7 @@ Scoped.require([
                     });
                     return;
                 }
-                promise.asyncSuccess((stdout + stderr).trim().split(" ").filter(function (item) {
+                promise.asyncSuccess((stdout + stderr).trim().split("\n").filter(function (item) {
                     return item.length > 0;
                 }));
             });
