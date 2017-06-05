@@ -1,7 +1,7 @@
 {
 	"name": "js-devops",
 	"description": "JS DevOps",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "Foodji",
 	"repository": "https://github.com/jsonize/js-devops",
 	"license": "Apache-2.0",
@@ -20,6 +20,8 @@
 	    "betajs-scoped": "~0.0.13",
 	    "betajs": "~1.0.96",
 		"node-df": "",
-		"iwlist": ""
+		"iwlist": "",
+		"ifconfig-linux": "",
+		"docker-ps": ""
 	}	
 }
