@@ -13,6 +13,8 @@ module.exports = {
 
     ifconfig: require(__dirname + "/src/ifconfig.js").ifconfig,
 
-    dockerps: require(__dirname + "/src/dockerps.js").dockerps
+    dockerps: require(__dirname + "/src/dockerps.js").dockerps,
+
+    reboot: require(__dirname + "/src/reboot.js").reboot
 		
 };
