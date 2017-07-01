@@ -1,4 +1,4 @@
-# js-devops 0.0.5
+# js-devops 0.0.6
 
 This is a dev ops library for JS.
 
