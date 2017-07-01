@@ -10,8 +10,6 @@ module.exports = {
 
 	iwlist: require(__dirname + "/src/iwlist.js").iwlist,
 
-    connectwifi: require(__dirname + "/src/connectwifi.js").connectwifi,
-
 	usblist: require(__dirname + "/src/usb.js").usblist,
 
     ifconfig: require(__dirname + "/src/ifconfig.js").ifconfig,

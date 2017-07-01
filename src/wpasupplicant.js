@@ -3,6 +3,7 @@ Scoped.require([
 ], function (Promise) {
 
     var parser = function (content) {
+        content = content + "";
         var lines = [];
         var networks = [];
         var currentNetwork = null;
