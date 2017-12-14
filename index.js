@@ -22,6 +22,6 @@ module.exports = {
 
     removewifi: WpaSupplicant.removewifi,
 
-    wifidatabase: WpaSupplicant.wifidatabase,
-		
+    wifidatabase: WpaSupplicant.wifidatabase
+
 };
