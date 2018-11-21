@@ -57,7 +57,7 @@ Scoped.require([
                 'psk="' + password +'"',
                 'priority=10',
                 '}'
-            ]
+            ];
             FS.appendFile('/etc/wpa_supplicant/wpa_supplicant.conf', "\n" + lines.join("\n") + "\n", promise.asyncCallbackFunc());
             return promise;
         },

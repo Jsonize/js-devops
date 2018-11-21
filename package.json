@@ -1,27 +1,26 @@
 {
 	"name": "js-devops",
 	"description": "JS DevOps",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"author": "Foodji",
 	"repository": "https://github.com/jsonize/js-devops",
 	"license": "Apache-2.0",
-    "engines": {
-	    "node": ""
- 	},
- 	"main": "index.js",
+	"engines": {
+		"node": ""
+	},
+	"main": "index.js",
 	"devDependencies": {
 		"grunt": "",
-        "grunt-node-qunit": "",
-        "qunit": "",
-        "grunt-contrib-jshint": ""
+		"grunt-node-qunit": "",
+		"qunit": "",
+		"grunt-contrib-jshint": ""
 	},
 	"dependencies": {
-	    "tmp": "",
-	    "betajs-scoped": "~0.0.13",
-	    "betajs": "~1.0.96",
-		"node-df": "",
+		"betajs": "~1.0.96",
+		"betajs-scoped": "~0.0.13",
+		"docker-ps": "^1.0.1",
 		"iwlist": "",
-		"ifconfig-linux": "",
-		"docker-ps": ""
-	}	
+		"node-df": "",
+		"tmp": ""
+	}
 }
