@@ -4,6 +4,8 @@ Scoped.binding("betajs", "global:BetaJS");
 
 module.exports = {};
 
+BetaJS.Objs.extend(module.exports, require(__dirname + "/src/git.js"));
+BetaJS.Objs.extend(module.exports, require(__dirname + "/src/npm.js"));
 BetaJS.Objs.extend(module.exports, require(__dirname + "/src/df.js"));
 BetaJS.Objs.extend(module.exports, require(__dirname + "/src/iwlist.js"));
 BetaJS.Objs.extend(module.exports, require(__dirname + "/src/screen.js"));
