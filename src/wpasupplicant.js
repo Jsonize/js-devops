@@ -2,6 +2,8 @@ Scoped.require([
     "betajs:Promise"
 ], function (Promise) {
 
+    var FS = require('fs');
+
     var parser = function (content) {
         content = content + "";
         var lines = [];
@@ -49,7 +51,6 @@ Scoped.require([
     module.exports = {
 
         addwifi: function (ssid, password) {
-            var FS = require('fs')
             var promise = Promise.create();
             var lines = [
                 'network={',
@@ -63,7 +64,6 @@ Scoped.require([
         },
 
         removewifi: function (ssid) {
-            var FS = require('fs')
             var promise = Promise.create();
             var content = FS.readFileSync('/etc/wpa_supplicant/wpa_supplicant.conf');
             var parsed = parser(content);
@@ -74,7 +74,6 @@ Scoped.require([
         },
 
         wifidatabase: function () {
-            var FS = require('fs')
             var promise = Promise.create();
             var content = FS.readFileSync('/etc/wpa_supplicant/wpa_supplicant.conf');
             var parsed = parser(content);
