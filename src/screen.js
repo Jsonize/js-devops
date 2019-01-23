@@ -60,9 +60,11 @@ Scoped.require([
 
     module.exports = {
 
-        screen_output_detection: function () {
+        screen_output_detection: function (display, user) {
+            display = display || 0;
+            user = user || 'kiosk';
             var promise = Promise.create();
-            require("child_process").exec("sudo -u kiosk xrandr -display :0", function (error, stdout, stderr) {
+            require("child_process").exec("sudo -u " + user + " xrandr -display :" + display, function (error, stdout, stderr) {
                 if (error) {
                     promise.asyncError({
                         result: "UnknownError",
@@ -77,9 +79,11 @@ Scoped.require([
             return promise;
         },
 
-        screen_input_detection: function () {
+        screen_input_detection: function (display, user) {
+            display = display || 0;
+            user = user || 'kiosk';
             var promise = Promise.create();
-            require("child_process").exec("sudo -u kiosk sh -c 'export DISPLAY=:0 ; xinput'", function (error, stdout, stderr) {
+            require("child_process").exec("sudo -u " + user + " sh -c 'export DISPLAY=:" + display + " ; xinput'", function (error, stdout, stderr) {
                 if (error) {
                     promise.asyncError({
                         result: "UnknownError",
