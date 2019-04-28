@@ -6,7 +6,7 @@ Scoped.require([
 
         reboot: function () {
             var promise = Promise.create();
-            require("child_process").exec("sudo reboot", function (error, stdout, stderr) {
+            require("child_process").exec("shutdown -r +1", function (error, stdout, stderr) {
                 if (error) {
                     promise.asyncError({
                         result: "UnknownError",

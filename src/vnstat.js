@@ -35,7 +35,7 @@ Scoped.require([
 
     module.exports = {
 
-        ifconfig: function () {
+        vnstat: function () {
             var promise = Promise.create();
             require("child_process").exec("sudo vnstat", function (error, stdout, stderr) {
                 if (error) {
