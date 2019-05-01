@@ -14,7 +14,7 @@ Scoped.require([
                 var result = {};
                 while (lines.length > 0) {
                     line = lines.shift();
-                    var entry = line.match(/^\s+([^\s].*[^\s])\s\s+([^\s].*[^\s])\s+\/\s+([^\s].*[^\s])\s+\/\s+([^\s].*[^\s])\s+\/\s+([^\s].*[^\s])\s*$/);
+                    var entry = line.match(/^\s+([^\s].*[^\s])\s\s+([^\s].*[^\s])\s+\/\s+([^\s].*[^\s])\s+\/\s+([^\s].*[^\s])\s+\/\s+([^\s].*[^\s])\s*$/) || line.match(/^\s+([^\s].*[^\s])\s\s+([^\s].*[^\s])\s+\/\s+([^\s].*[^\s])\s+\/\s+([^\s].*[^\s])\s*$/);
                     if (!entry) {
                         lines.unshift(line);
                         break;
