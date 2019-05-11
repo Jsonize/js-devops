@@ -30,6 +30,10 @@ Scoped.require([
 
         npm_update: function (repo) {
             return cmd("cd " + repo + " ; npm u");
+        },
+
+        npm_read_package: function (repo) {
+            return Promise.value(JSON.parse(require('fs').readFileSync(repo + "/package.json")));
         }
 
     };
