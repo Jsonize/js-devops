@@ -85,7 +85,7 @@ Scoped.require([
         },
 
         git_pull: function (repo, branch) {
-            return cmd("cd " + repo + " ; git pull " + (branch || "master"));
+            return cmd("cd " + repo + " ; git pull " + (branch || "origin master"));
         }
 
     };
