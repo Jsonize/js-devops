@@ -16,3 +16,4 @@ BetaJS.Objs.extend(module.exports, require(__dirname + "/src/reboot.js"));
 BetaJS.Objs.extend(module.exports, require(__dirname + "/src/wpasupplicant.js"));
 BetaJS.Objs.extend(module.exports, require(__dirname + "/src/internet.js"));
 BetaJS.Objs.extend(module.exports, require(__dirname + "/src/vnstat.js"));
+BetaJS.Objs.extend(module.exports, require(__dirname + "/src/iproute.js"));
