@@ -29,7 +29,7 @@ Scoped.require([
         },
 
         npm_update: function (repo) {
-            return cmd("cd " + repo + " ; npm u");
+            return cmd("cd " + repo + " ; npm update");
         },
 
         npm_read_package: function (repo) {
