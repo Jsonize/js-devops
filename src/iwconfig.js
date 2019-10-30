@@ -21,7 +21,7 @@ Scoped.require([
                 else if (token.indexOf("IEEE") === 0)
                     result.protocol = token;
             } else
-                result[splt[0]] = splt[1];
+                result[splt[0]] = splt[1].replace(/"/g, "");
         });
         return result;
     };
