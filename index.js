@@ -8,6 +8,7 @@ BetaJS.Objs.extend(module.exports, require(__dirname + "/src/git.js"));
 BetaJS.Objs.extend(module.exports, require(__dirname + "/src/npm.js"));
 BetaJS.Objs.extend(module.exports, require(__dirname + "/src/df.js"));
 BetaJS.Objs.extend(module.exports, require(__dirname + "/src/iwlist.js"));
+BetaJS.Objs.extend(module.exports, require(__dirname + "/src/iwconfig.js"));
 BetaJS.Objs.extend(module.exports, require(__dirname + "/src/screen.js"));
 BetaJS.Objs.extend(module.exports, require(__dirname + "/src/usb.js"));
 BetaJS.Objs.extend(module.exports, require(__dirname + "/src/ifconfig.js"));
