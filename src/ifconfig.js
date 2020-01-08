@@ -26,6 +26,8 @@ Scoped.require([
                 item.type = "lan";
             if (item.name.indexOf("wl") === 0)
                 item.type = "wifi";
+            if (item.name.indexOf("enx") === 0)
+                item.type = "broadband";
             while (lines.length > 0 && lines[0].trim().match(/^[^\d]/)) {
                 var sub = lines.shift().trim().split(/\s/);
                 if (sub[0].indexOf("link/") === 0) {
