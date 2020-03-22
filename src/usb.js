@@ -47,6 +47,10 @@ Scoped.require([
             return lsLister("/dev/tty*");
         },
 
+        devlist: function () {
+            return lsLister("/dev");
+        },
+
         lsusb: function () {
             var promise = Promise.create();
             require("child_process").exec("sudo lsusb", function (error, stdout, stderr) {
