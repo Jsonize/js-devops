@@ -25,11 +25,11 @@ Scoped.require([
     module.exports = {
 
         npm_install: function (repo) {
-            return cmd("cd " + repo + " ; npm i");
+            return cmd("cd " + repo + " ; npm i --unsafe-perm");
         },
 
         npm_update: function (repo) {
-            return cmd("cd " + repo + " ; npm update");
+            return cmd("cd " + repo + " ; npm update --unsafe-perm");
         },
 
         npm_read_package: function (repo) {
