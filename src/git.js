@@ -81,7 +81,7 @@ Scoped.require([
         },
 
         git_checkout: function (repo, branch) {
-            return cmd("cd " + repo + " ; git checkout " + (branch || "master"));
+            return cmd("cd " + repo + " ; git checkout " + (branch || "."));
         },
 
         git_pull: function (repo, branch) {
