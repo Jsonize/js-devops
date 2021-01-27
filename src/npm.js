@@ -24,12 +24,12 @@ Scoped.require([
 
     module.exports = {
 
-        npm_install: function (repo) {
-            return cmd("cd " + repo + " ; npm i --unsafe-perm");
+        npm_install: function (repo, nosudo) {
+            return cmd("cd " + repo + " ; " + (nosudo ? "" : "sudo") + " npm i --unsafe-perm");
         },
 
-        npm_update: function (repo) {
-            return cmd("cd " + repo + " ; npm update --unsafe-perm");
+        npm_update: function (repo, nosudo) {
+            return cmd("cd " + repo + " ; " + (nosudo ? "" : "sudo") + " npm update --unsafe-perm");
         },
 
         npm_read_package: function (repo) {
